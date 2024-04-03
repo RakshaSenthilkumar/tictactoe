@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background:beige;
+}
+
+section {
+    text-align: center;
+    border-radius: 10px;
+    width: 500px; 
+    margin: auto;
+    background:linear-gradient(135deg,#8052ec,#d161ff);
+    margin-top: 15px;
+    box-shadow: 0px 10px 36px 16px #d161ff;
+    padding: 20px; 
+}
+
+.game--title {
+    padding-top: 20px;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top:20px;
+    gap:2vmin;
+    justify-content:center;
+}
+
+.cell {
+   background:#ffffff;
+    height:17vmin;
+    width:17vmin;
+    border:none;
+    border-radius:8px;
+    font-size:11vmin;
+    color:#d161ff;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-bottom: 20px;
+    height: 40px; /* Increased size */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color:#0a0027;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.25s;
+    background-color: #c1a2fe;
+}
+
+.game--main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.game--scores {
+    width: 150px;
+    padding: 290px;
+    margin-top: -900px;
+    color: black;
+    
+}
+
+.game--scores h2 {
+    margin-bottom: 2px;
+}
+
+.game--scores table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.game--scores table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.game--scores table td:first-child {
+    font-weight: bold;
+}
+
+
+.popup{
+    background:linear-gradient(135deg,#8052ec,#d161ff);
+    height:100%;
+    width:100%;
+    position:absolute;
+    display: flex;
+    z-index:2;
+    align-items:center;
+    flex-direction:column;
+    gap:1em;
+    font-size:12vmin;
+}
+#new-game{
+    font-size:0.6em;
+    padding:0.5em 1em;
+    background-color:#0a0027;
+    color:#ffffff;
+    border-radius:0.2em;
+    border:none;
+}
+#message{
+    color:#ffffff;
+    text-align:center;
+    font-size:1em;
+}
+.popup.hide{
+    display:none;
+}
